@@ -8,7 +8,7 @@ import torch
 from qwen_vl_utils import process_vision_info
 from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration, TextIteratorStreamer
 
-DEFAULT_CKPT_PATH = './finetune'
+DEFAULT_CKPT_PATH = './qwen-vl-finetune'
 
 
 def _get_args():
