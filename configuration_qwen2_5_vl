@@ -1,0 +1,14 @@
+from transformers import PretrainedConfig
+
+class Qwen2_5_VLConfig(PretrainedConfig):
+    model_type = "qwen2_5_vl"
+
+    def __init__(
+        self,
+        vision_model_name="openai/clip-vit-base-patch32",
+        text_model_name="Qwen/Qwen-1_8B-Chat",
+        **kwargs
+    ):
+        super().__init__(**kwargs)
+        self.vision_model_name = vision_model_name
+        self.text_model_name = text_model_name
